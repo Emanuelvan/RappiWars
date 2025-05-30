@@ -78,7 +78,7 @@ public class UIManager : MonoBehaviour
 
     public void DidSetReady()
     {
-        instructionText.text = "Waiting for other players to be ready...";
+        instructionText.text = "Esperando por otros Rappitenderos";
     }
 
     public void SetWaitUI(GameState newState, Player winner)
@@ -87,13 +87,13 @@ public class UIManager : MonoBehaviour
         {
             if (winner == null)
             {
-                gameStateText.text = "Waiting to Start";
-                instructionText.text = "Press R when you're ready to begin!";
+                gameStateText.text = "Esperando Pedido";
+                instructionText.text = "Dele a la R cuando este listo";
             }
             else
             {
                 gameStateText.text = $"{winner.Name} Wins";
-                instructionText.text = "Press R when you're ready to play again!";
+                instructionText.text = "Dele a la R cuando quiera jugar otra vez";
             }
         }
 
